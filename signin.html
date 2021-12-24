@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Sign In</title> </head>
+<style>
+  
+/* css styling for body and input */
+
+
+body {Font-family: 'Londrina Solid', cursive; background-color:white; }
+
+
+input[type=text], input[type=password] {
+  width: 97%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: dotted;
+  background: #f1f1f1;
+}
+
+
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+hr {
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;
+}
+
+
+/* css styling for signup button */
+button {
+  background-color:orangered;
+  color: white;
+  Font-family: 'Londrina Solid', cursive;
+  font-size: large;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+.container {
+  padding: 16px;
+  /*this code is used to add padding to container elements */
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  /* this code Clear floats */
+}
+
+</style>
+<body>
+ 
+<form action="/action_page.php" style="border:2px solid orangered">
+
+  <div class="container">
+    <div id="logo" style="float: right;">
+      <img src="IMG/dd-logo-01-01.png" alt="" style="width: 300px;">
+  </div>
+
+    <h1 style="color: orangered;">Sign In</h1>
+
+    <p style="color: orangered; ">Please enter your credentials to login.</p>
+
+    <hr>
+
+    <label for="email"><b style="color: orangered; font-size: large;">Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b style="color: orangered;font-size: large;">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+    <div class="clearfix">
+
+      <button type="submit" class="signinbtn">log In</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
